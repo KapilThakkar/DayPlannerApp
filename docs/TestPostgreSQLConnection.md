@@ -15,7 +15,7 @@
     ![](img/image-21.png)
 
 1.	There are two `Alert Rules` created while deploying with ARM Template.
-      - __CPU-Alert:-__ This is a CPU usage based alert with a threshold of 80% over an evaluation window of 5 minutes. If the condition is violated the alert will transition to an ìActiveî state and when the alert condition is resolved the alert rules gets back to `Non Activated or Warning` states.  Each data point for CPU percentage is an average value over the last five minute period. In the backend the alerting engine evaluates each data point and triggers a state change event when a condition is violated or resolved.
+      - __CPU-Alert:-__ This is a CPU usage based alert with a threshold of 80% over an evaluation window of 5 minutes. If the condition is violated the alert will transition to an ‚ÄúActive‚Äù state and when the alert condition is resolved the alert rules gets back to `Non Activated or Warning` states.  Each data point for CPU percentage is an average value over the last five minute period. In the backend the alerting engine evaluates each data point and triggers a state change event when a condition is violated or resolved.
        
       - __Storage-Alert:-__  This is a Storage based alert over an evaluation window of 5 minutes and if the Storage goes above 80%, the alert triggers.
 
@@ -43,7 +43,7 @@
 1.	The schema of `engagements` table is as follows.
     
     Column Name | Data Type | Description
-    ------------ | -------------
+    ------------ | ---------|---------
     loc_id | serial | Unique id of engagement with auto-increament feature
     loc_name | character varying(255) | Location address of engagement where it is schedule
     title | character varying(255) | Subject of engagement
