@@ -79,7 +79,7 @@ $(document).ready(function () {
         var places = new google.maps.places.Autocomplete(document.getElementById('location'));
         google.maps.event.addListener(places, 'place_changed', function () {
             var place = places.getPlace();
-            loc = place.formatted_address;
+            loc = $("#location").val();
             latitude = place.geometry.location.lat();
             longitude = place.geometry.location.lng();
         });
@@ -145,9 +145,9 @@ function save_engagement() {
     else if ($("#location").val().trim() == "") {
         swal('Warning', 'Please select location.', 'warning');
     }
-    /*else if (loc.trim() != $("#location").val().trim() || latitude == "" || longitude == "") {
+    else if (loc.trim() != $("#location").val().trim() || latitude == "" || longitude == "") {
         swal('Warning', 'Please select valid location.', 'warning');
-    }*/
+    }
     else if (meeting_date.trim() == "") {
         swal('Warning', 'Please enter meeting date.', 'warning');
     }
