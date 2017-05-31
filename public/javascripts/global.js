@@ -328,11 +328,19 @@ var gMap = {
             if (status === 'OK') {
                 if (gMap.latlongArrayGlobal.length < 3) {
                     gMap.directionsRendererService.setDirections(response);
+
+                    if (gMap.latlongArrayGlobal.length == 2 && sourcelatlong.lat() == destlatlong.lat() && sourcelatlong.lng() == destlatlong.lng()) {
+                        setTimeout(function () {
+                            //  gMap.directionsRendererService.setMap(gMap.map);
+                            gMap.map.setZoom(10)
+                        }, 100);
+                    }
                 }
                 var m = Math.ceil((response.routes[0].overview_path.length) / 2)
                 middle = response.routes[0].overview_path[m]
 
-                gMap.apply_direction_matrix(middle, sourcelatlong, destlatlong)
+                if (sourcelatlong.lat() != destlatlong.lat() && sourcelatlong.lng() != destlatlong.lng())
+                    gMap.apply_direction_matrix(middle, sourcelatlong, destlatlong)
                 //callback(middle, sourcelatlong, destlatlong);
             }
             else {
