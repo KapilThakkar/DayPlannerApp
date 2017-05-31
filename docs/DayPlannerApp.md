@@ -36,7 +36,30 @@ Following are the steps to visite the hosted website with all this features:-
 
     ![](img/image-6.png)
 
-1.	The overview of the `App Service` will open up, it contains the `URL` where our application is hosted.
+1.	The overview of `App Service` will open up, on the left side panel the __Console__ is present.<br/>
+  
+    The __Azure portal__ provides console access to your app. You can explore your app's file system and run powershell/cmd scripts. You are bound by the same permissions set as your running app code when executing __Console Commands__. Access to protected directories or running scripts that require elevated permissions is blocked.<br/>
+    
+    This __Console__ will also show all environment variable used in the __Day Planner App__ and much more.<br/>
+
+    To view the environment variable in the app goes through the following steps:-
+    - Enter __`printenv`__ command on the console and press <kbd>Enter</kbd> key.
+
+    ![](img/image-48.png)
+
+1.	The `printenv` command displays all the variable used by the hosted `App Service`. 
+    As of now we are using two main services of **Azure** and they are,
+    - AzureDB for PostgreSQL managed service
+    - Azure Search Service
+
+    For accessing __PostgreSQL__ database, we required the connection string and this connection string we retrieve from `environment variable`.
+
+    And for accessing __Azure Search Service__ we required the `SearchServicePrimaryKey` and `SearchServiceUri` we retrieve it from the `environment variable`.
+
+    __Note__: The required environment variables by the `Day Planner App` are being exported using ARM template while deploying resources. See <a href="ARMTemplate.md">ARM Template doc</a> for more details.
+    ![](img/image-49.png)
+
+1.	Click on the __Overview__ present on left side panel, it will open `App Service` overview. It contains the `URL` where our application is hosted.
 
     ![](img/image-7.png)
 
