@@ -46,7 +46,8 @@
             var $input = $(this).closest('.input-datepicker').find('input'),
                 date_format = ($input.data('format') ? $input.data('format') : "MM/DD/YYYY");
             if (moment($input.val(), date_format).isValid()) {
-                updateDisplay(moment($input.val(), date_format));
+                var mDate = moment($input.val(), date_format);
+                mDate.format('YYYY') == 0 ? alert('Invalid Date') : updateDisplay(mDate);
             } else {
                 alert('Invalid Date');
             }
