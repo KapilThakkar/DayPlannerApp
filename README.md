@@ -22,7 +22,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 Follow the <a href="docs/DeploymentInstructions.md">deployment instructions</a> to get you started.
 
-## Application Helpful Docs
+## Application Help Docs
 
 1. <a href="docs/TestPostgreSQLConnection.md">Test PostgreSQL Connections</a>
 
