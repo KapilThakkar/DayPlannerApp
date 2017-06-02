@@ -1,7 +1,7 @@
 Prerequisites
 =============
 
--   [Telerik Fidller](https://www.telerik.com/download/fiddler)
+-   [Telerik Fiddler](https://www.telerik.com/download/fiddler)
 
 
 Push coffee shops data into an index
@@ -9,9 +9,9 @@ Push coffee shops data into an index
 
 Steps to push data into an index
 
-1. Download and install Telerik Fidller with the default setting from given link in ther prerequisites.
+1. Download and install Telerik Fiddler with the default setting from given link in their prerequisites.
 
-1. Open Telerik Fidller.
+1. Open Telerik Fiddler.
 1. Click on the Composer tab.
  ![](img/search-image-26.png)
 
@@ -36,7 +36,7 @@ Steps to get API key
 7. Paste the coffee shops geo-spatial data in request body in the given format.
 ![](img/search-image-25.png)
 
-8. In the request body, add the value to location id of the coffee shops `1,2,..etc`, name of the coffee shop, address of the coffee shop, city of the coffee shop, country of the coffee shop and longitude, latitude in the location field.
+8. In the request body, add the value to location id of the coffee shops `1, 2,..etc`, name of the coffee shop, address of the coffee shop, city of the coffee shop, country of the coffee shop and longitude, latitude in the location field.
 
 9. Click on the Execute button, by this process the request body data will insert into `azure-search-data` index.
 ![](img/search-image-30.png)
