@@ -7,7 +7,7 @@ Azure Search is the Cloud based search as a service provided by Microsoft, which
 Geosearch
 ========================
 
-Azure Search logically processes, filters and respond the geographic location. It enable the user to get the Azure Search respond based on the requested data to the Azure search query string.
+Azure Search logically processes, filters and respond the geographic location. It enables the user to get the Azure Search respond based on the requested data to the Azure search query string.
 
 How it works with Day Planner App
 ========================
@@ -23,7 +23,7 @@ By this process, Azure Search service will execute the query given below.
 In the above query, `location` is the field in the index having data type of `Edm.GeographyPoint` and its `Longitude` and `Latitude`.
 `Radius` is the distance in `km` within which Azure Search Service will find out the coffee shops.
 
-Here is the some sample query. `search=*&$filter=geo.distance(location, geography'POINT(79.0453631 21.1535023)') le 5`
+Here is some sample query. `search=*&$filter=geo.distance(location, geography'POINT(79.0453631 21.1535023)') le 5`
 
 The about query will search the coffee shops less than `5 km` distance of the given latitude and longitude and give the response.
 

@@ -13,7 +13,7 @@ End Time | End time of engagement
 All the Engagement are stored in __AzureDB for PostgreSQL__ . It is a powerful, open source object-relational database system which has `GeoSpatial` capabilities `PostGIS` functionality 
 and it is managed service by Azure by the `Azure Database for PostgreSQL Service` name. The data is plotted on the map according to Engagement Date and Ascending order of the Start Time. 
 
-Following are the steps to visite the hosted website with all this features:-
+Following are the steps to visit the hosted website with all this features:-
 
 1.	Go to your Microsoft Azure subscription. 
 
@@ -23,7 +23,7 @@ Following are the steps to visite the hosted website with all this features:-
 
     ![](img/image-5.png)
 
-1.	Click on the resource group to view all of the resources that were deployed using `ARM Template`.
+1.	Click on the resource group to view all the resources that were deployed using `ARM Template`.
     - Azure App Service.
     - Azure Database for PostgreSQL Service
     - Azure Search Service
@@ -32,7 +32,7 @@ Following are the steps to visite the hosted website with all this features:-
 
     ![](img/image-6.png)
 
-1.	Click on the second website, the one that has the `App Service` key in the its __Type__.
+1.	Click on the second website, the one that has the `App Service` key in its __Type__.
 
     ![](img/image-6.png)
 
@@ -71,7 +71,7 @@ Following are the steps to visite the hosted website with all this features:-
 
     ![](img/image-20.png)
 
-1.	Click on the `Add` button ,we can add the new engagement from the website.
+1.	Click on the `Add` button, we can add the new engagement from the website.
 
     ![](img/image-9.png)
 
@@ -115,4 +115,4 @@ Following are the steps to visite the hosted website with all this features:-
 
     ![](img/image-19.png)
 
-__Note__: The Sample Coffee Shops data, pushed by application's first launch to `Azure Search Service`, is in context with the sample engagements data pushed to `AzureDB for PostgreSQL`. As the application provides an interface only to add new enagagement data to Azure Postgres Service, the following doc will help you to add more documents to Azure Search Service manually. Please refer <a href="AddingDocumentsToAzureSearchIndex.md">Adding Documents To Azure Search Index.</a>   
+__Note__: The Sample Coffee Shops data, pushed by application's first launch to `Azure Search Service`, is in context with the sample engagements data pushed to `AzureDB for PostgreSQL`. As the application provides an interface only to add new engagement data to Azure Postgres Service, the following doc will help you to add more documents to Azure Search Service manually. Please refer <a href="AddingDocumentsToAzureSearchIndex.md">Adding Documents To Azure Search Index.</a>   

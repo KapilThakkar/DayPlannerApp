@@ -2,7 +2,7 @@
 
 The Day Planner App is a Node.js application made using Express which is a minimal and flexible Node.js web application framework  
 
-Following steps provide the information about code structure:- 
+Following steps provide the information about code structure: - 
 1.	Clone the git repository of <a href="#">Day Planner App</a>.
 
 1.	For setting up the project, open Visual Studio and add the <a href="https://www.visualstudio.com/vs/node-js/">Node JS extension</a> into it.
@@ -17,14 +17,14 @@ Following steps provide the information about code structure:-
 
     ![](img/image-26.png)
 
-1.	The `docs` directory contains all the mark down (.md) files. These docs are helpful in understanding the app, integrated Azure services and the deployment startegy for the app.
+1.	The `docs` directory contains all the mark down (.md) files. These docs are helpful in understanding the app, integrated Azure services and the deployment strategy for the app.
 
     ![](img/image-25.png)
 
-1.	The `public` directory contains the fonts, javascript files, images and css files which are exposed to client.<br/>
+1.	The `public` directory contains the fonts, JavaScript files, images and css files which are exposed to client.<br/>
     This directory contains some sub-directories, they are as follows:- <br/>
     - __font__ :- Contains all glyphicons used in our app.
-    - __javascript__ :- Contains all javascript files which make our app interactive.
+    - __JavaScript__ :- Contains all JavaScript files which make our app interactive.
     - __stylesheets__ :- Contains all css files.
 
     ![](img/image-27.png)
@@ -62,4 +62,5 @@ Following steps provide the information about code structure:-
 1.	The `searchService.js` file acts as interface to perform actions on 'Azure Search Service'.
 
     ![](img/image-35.png)
+
 
