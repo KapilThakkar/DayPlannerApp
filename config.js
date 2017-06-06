@@ -17,6 +17,7 @@ config.Azuresearch.apiVersion = "2015-02-28-Preview";
 
 //Postgres database connection string
 config.Postgres.connstr = process.env.POSTGRESQLCONNSTR_DefaultConnection;
+config.Postgres.pgAdminUser = process.env.pgAdminUser;
 
 
 module.exports = config;

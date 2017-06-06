@@ -318,9 +318,10 @@
               "displayName": "WebAppSettings"
           },
           "properties": {
-              "WEBSITE_NODE_DEFAULT_VERSION": "6.9.1",
-              "searchServicePrimaryKey": "[listAdminKeys(resourceId('Microsoft.Search/searchServices', variables('searchServiceName')), '2015-08-19').primaryKey]",
-              "searchServiceUri": "[concat('https://', variables('searchServiceName'), '.search.windows.net')]"
+            "WEBSITE_NODE_DEFAULT_VERSION": "6.9.1",
+            "pgAdminUser": "[parameters('postgresAdministratorLogin')]",
+            "searchServicePrimaryKey": "[listAdminKeys(resourceId('Microsoft.Search/searchServices', variables('searchServiceName')), '2015-08-19').primaryKey]",
+            "searchServiceUri": "[concat('https://', variables('searchServiceName'), '.search.windows.net')]"
           }
         },
         {
