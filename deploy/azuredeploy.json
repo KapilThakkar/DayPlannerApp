@@ -7,7 +7,8 @@
     "databaseName": "dayplanner",
     "hostingPlanName": "[concat(variables('webSiteName'),'-plan')]",
     "searchServiceName": "[concat('gis-service', uniqueString(resourceGroup().id))]",
-    "skuNamePG": "PGSQLS3M100"
+    "skuNamePG": "PGSQLS3M100",
+    "customEmails": "[split(parameters('postgresAlertsAdditionalAdministratorEmail(s)'), ';')]"
   },
   "parameters": {
     "appServicePlan": {
@@ -212,13 +213,13 @@
                   "windowSize": "00:05:00",
                   "timeAggregation": "Average"
               },
-              "actions": [
-                {
-                  "odata.type": "Microsoft.Azure.Management.Insights.Models.RuleEmailAction",
-                  "sendToServiceOwners": "true",
-                  "customEmails": "[parameters('postgresAlertsAdditionalAdministratorEmail(s)')]"
-                }
-              ]
+            "actions": [
+              {
+                "odata.type": "Microsoft.Azure.Management.Insights.Models.RuleEmailAction",
+                "sendToServiceOwners": "true",
+                "customEmails": "[variables('customEmails')]"
+              }
+            ]
           }
         },
         {
@@ -245,13 +246,13 @@
                     "windowSize": "00:05:00",
                     "timeAggregation": "Average"
                 },
-                "actions": [
-                  {
-                    "odata.type": "Microsoft.Azure.Management.Insights.Models.RuleEmailAction",
-                    "sendToServiceOwners": "true",
-                    "customEmails": "[parameters('postgresAlertsAdditionalAdministratorEmail(s)')]"
-                  }
-                ]
+              "actions": [
+                {
+                  "odata.type": "Microsoft.Azure.Management.Insights.Models.RuleEmailAction",
+                  "sendToServiceOwners": "true",
+                  "customEmails": "[variables('customEmails')]"
+                }
+              ]
             }
         }
       ]
