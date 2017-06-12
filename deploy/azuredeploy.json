@@ -123,7 +123,6 @@
     },
     "postgresAlertsAdditionalAdministratorEmail(s)": {
       "type": "string",
-      "defaultValue": "",
       "metadata": {
         "description": "For CPU and Storage usage alerts, add email addresses separated by semicolons"
       }
